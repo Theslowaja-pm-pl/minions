@@ -102,7 +102,7 @@ class Loader extends PluginBase{
             $item->setNamedTag($nbt);
             return $item;
         }
-        return VanillaItems::AIR();
+        return VanillaBlocks::AIR()->asItem();
     }
 
     public function isInRemove(Player $player): bool{
