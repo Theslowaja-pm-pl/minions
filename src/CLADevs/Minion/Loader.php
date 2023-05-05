@@ -6,6 +6,7 @@ use CLADevs\Minion\entities\MinionEntity;
 use CLADevs\Minion\entities\types\FarmerMinion;
 use CLADevs\Minion\entities\types\MinerMinion;
 use muqsit\invmenu\InvMenuHandler;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\entity\EntityDataHelper;
