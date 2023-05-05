@@ -6,6 +6,7 @@ use CLADevs\Minion\entities\MinionEntity;
 use CLADevs\Minion\entities\types\FarmerMinion;
 use CLADevs\Minion\entities\types\MinerMinion;
 use muqsit\invmenu\InvMenuHandler;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\entity\EntityDataHelper;
@@ -102,7 +103,7 @@ class Loader extends PluginBase{
             $item->setNamedTag($nbt);
             return $item;
         }
-        return VanillaItems::AIR();
+        return VanillaBlocks::AIR()->asItem();
     }
 
     public function isInRemove(Player $player): bool{
